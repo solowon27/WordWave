@@ -41,6 +41,7 @@
     "workbox-webpack-plugin": "^6.6.0"
   },
   "dependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "cors": "^2.8.5"
   },
   "homepage": "https://github.com/solowon27/WordWave#readme"
