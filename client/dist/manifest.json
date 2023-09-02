@@ -38,5 +38,25 @@
   "start_url": "./",
   "description": "save your Notes!",
   "background_color": "#225ca3",
-  "theme_color": "#3A0CA3"
+  "theme_color": "#3A0CA3",
+  "screenshots": [
+    {
+      "src": "C:\\CLASS\\bootcamp\\challenge\\WordWave\\client\\src\\images\\desktop.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "destination": "assets\\screenshots",
+      "form_factor": "wide",
+      "screen_orientation": "landscape",
+      "label": "Home screen on desktop"
+    },
+    {
+      "src": "C:\\CLASS\\bootcamp\\challenge\\WordWave\\client\\src\\images\\mobile.webp",
+      "sizes": "480x1080",
+      "type": "image/webp",
+      "destination": "assets\\screenshots",
+      "formFactor": "handset",
+      "screenOrientation": "portrait",
+      "label": "Home screen on mobile"
+    }
+  ]
 }
