@@ -59,7 +59,6 @@ You don't need to worry about data loss; your content is saved securely.
 ![workbox-precach](/client/Asset/workbox-precache.jpg)
 ![service workers](/client/Asset/service%20workers.jpg)
 ![database](/client/Asset/database.jpg)
-![mongoDB thoughts](/Assets/mongodb%20thoughts%20samples.jpg)
 
 ## Contributing
 Contributions are welcome! If you find any issues or improvements, feel free to open a pull request.
