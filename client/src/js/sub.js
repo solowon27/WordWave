@@ -1,3 +1,20 @@
+import { saveText, getLastSavedText, } from "./database";
+
+const textArea = document.getElementById('editor');
+const saveButton = document.getElementById('save');
+
+// Load last saved text from the database
+getLastSavedText((lastSavedContent) => {
+  textArea.value = lastSavedContent;
+});
+
+// Save text to the database when save button is clicked
+saveButton.addEventListener('click', () => {
+  const content = textArea.value;
+  saveText(content);
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const textArea = document.getElementById('editor');
   const lineNumbersDiv = document.querySelector('.line-numbers');
