@@ -6,6 +6,7 @@
 -[Usage](#usage)
 -[Deployed Link](#DeployedLink)
 -[Database](#database)
+-[Screenshots](#screenshots)
 -[Contributing](#contributing)
 -[License](#license)
 -[Contact](#contact)
@@ -46,7 +47,19 @@ Word Wave is designed to be straightforward to use:
 https://blooming-lake-26826-01602545f49f.herokuapp.com/
 ## Database
 
-Word Wave utilizes IndexedDB for data storage. It automatically creates a database called WordWaveDB and a store named EditorContent. You don't need to worry about data loss; your content is saved securely.
+Word Wave utilizes IndexedDB for data storage. It automatically creates a database called WordWaveDB and a store named EditorContent. 
+
+You don't need to worry about data loss; your content is saved securely.
+
+## Screenshots
+
+![Lighthouse](/client/Asset/lighthouse.jpg)
+![manifest-1](/client/Asset/manifest-1.jpg).
+![manifest-2](/client/Asset/manifest-2.jpg)
+![workbox-precach](/client/Asset/workbox-precache.jpg)
+![service workers](/client/Asset/service%20workers.jpg)
+![database](/client/Asset/database.jpg)
+![mongoDB thoughts](/Assets/mongodb%20thoughts%20samples.jpg)
 
 ## Contributing
 Contributions are welcome! If you find any issues or improvements, feel free to open a pull request.
