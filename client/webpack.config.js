@@ -49,6 +49,7 @@ module.exports = () => {
         theme_color: '#3A0CA3',
         start_url: './',
         publicPath: './',
+        display: 'standalone',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
@@ -56,6 +57,27 @@ module.exports = () => {
             destination: path.join('assets', 'icons'),
           },
         ],
+        screenshots: [
+          {
+            src: path.resolve('src/images/desktop.webp'),
+            sizes: '1920x1080',
+            type: 'image/webp',
+            destination: path.join('assets', 'screenshots'), 
+            form_factor: 'wide',
+            screen_orientation: 'landscape',
+            label: 'Home screen on desktop',
+          },
+          {
+            src: path.resolve('src/images/mobile.webp'),
+            sizes: '480x1080',
+            type: 'image/webp',
+            destination: path.join('assets', 'screenshots'),
+            formFactor: 'handset',
+            screenOrientation: 'portrait',
+            label: 'Home screen on mobile',
+          },
+        ],
+        
       }),
     ],
 
@@ -70,7 +92,7 @@ module.exports = () => {
       ],
     },
     {
-      test: /\.(png|svg|jpg|gif)$/,
+      test: /\.(png|svg|jpg|gif|webp)$/,
       use: [
         {
           loader: 'file-loader',
