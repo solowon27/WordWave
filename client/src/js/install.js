@@ -1,6 +1,18 @@
 const butInstall = document.getElementById("buttonInstall");
 const installImage = document.getElementById("installImage");
 
+// Function to hide the install button and image
+const hideInstallElements = () => {
+  butInstall.classList.add('hidden');
+  installImage.classList.add('hidden');
+};
+
+// Function to show the install button and image
+const showInstallElements = () => {
+  butInstall.classList.remove('hidden');
+  installImage.classList.remove('hidden');
+};
+
 // Function to show the install prompt
 const showInstallPrompt = () => {
   const promptEvent = window.deferredPrompt;
@@ -12,8 +24,7 @@ const showInstallPrompt = () => {
     window.deferredPrompt = null;
 
     // Hide the install button and image after the prompt is shown
-    butInstall.style.display = 'none';
-    installImage.style.display = 'none';
+    hideInstallElements();
   }
 };
 
@@ -26,10 +37,10 @@ window.addEventListener('beforeinstallprompt', (event) => {
   window.deferredPrompt = event;
 
   // Hide the default install button initially
-  butInstall.style.display = 'none';
+  hideInstallElements();
 
   // Show the install image
-  installImage.style.display = 'inline-block';
+  installImage.classList.remove('hidden');
 });
 
 // Event listener to detect the appinstalled event
