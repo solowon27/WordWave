@@ -4,6 +4,7 @@ const DB_NAME = 'WordWaveDB';
 const STORE_NAME = 'EditorContent';
 
 const initdb = async () => {
+  console.log('Initializing database...');
   openDB(DB_NAME, 1, {
     upgrade(db) {
       if (!db.objectStoreNames.contains(STORE_NAME)) {
@@ -12,7 +13,7 @@ const initdb = async () => {
       } else {
         console.log(`${STORE_NAME} database already exists`);
       }
-    },
+    },    
   });
 };
 
