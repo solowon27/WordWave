@@ -4,6 +4,7 @@
 -[Features](#features)
 -[Getting Started](#GettingStarted)
 -[Usage](#usage)
+-[Deployed Link](#DeployedLink)
 -[Database](#database)
 -[Contributing](#contributing)
 -[License](#license)
@@ -40,6 +41,9 @@ Word Wave is designed to be straightforward to use:
 
 -- Install as PWA (Mobile Only): On your mobile device, click the "Install!" button or the install image to add Word Wave to your home screen for easy access.
 
+## Deployed Link
+
+https://blooming-lake-26826-01602545f49f.herokuapp.com/
 ## Database
 
 Word Wave utilizes IndexedDB for data storage. It automatically creates a database called WordWaveDB and a store named EditorContent. You don't need to worry about data loss; your content is saved securely.
