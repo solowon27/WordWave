@@ -14,6 +14,10 @@ saveButton.addEventListener('click', () => {
   saveText(content);
 });
 
+window.addEventListener('beforeunload', () => {
+  const content = textArea.value;
+  saveText(content);
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   const textArea = document.getElementById('editor');
