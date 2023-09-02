@@ -14,9 +14,11 @@ saveButton.addEventListener('click', () => {
   saveText(content);
 });
 
+// Save text to the database when window is closed
 window.addEventListener('beforeunload', () => {
   const content = textArea.value;
   saveText(content);
+  console.log('Content saved to the database before closing the window');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
