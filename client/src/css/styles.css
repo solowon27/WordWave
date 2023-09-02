@@ -1,95 +1,111 @@
 body {
-    margin: 0;
-    padding: 10px;
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+#navbar {
+  background: linear-gradient(to right, #333, #555);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#navbar h1 {
+  margin: 0;
+}
+
+.nav-btn a {
+  display: inline;;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-btn .install-img { 
+  width: 50px;
+  height: 50px;
+  display: none; 
+}
+
+
+.editor-wrapper {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.line-numbers {
+  padding-top: 10px; 
+  user-select: none;
+  font-family: 'Courier New', monospace, sans-serif;
+  padding-right: 10px;
+  line-height: 1.5em; 
+  white-space: pre; 
+  overflow-y: hidden; 
+}
+
+#editor {
+  width: 100%;
+  font-family: 'Courier New', monospace, sans-serif;
+  line-height: 1.5em;
+  font-size: 16px;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #1b4f88;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .install-img {
+    display: none;
   }
-  
-  #navbar {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+  #buttonInstall {
+    display: inline-block;
   }
-  
+}
+
+@media screen and (max-width: 768px) {
   #navbar h1 {
-    margin: 0;
+    font-size: 1.1rem;
   }
 
-  .nav-btn a {
-    display: inline;;
-    color: white;
-    text-decoration: none;
-  }
-  
   .nav-btn .install-img { 
-    width: 50px;
-    height: 50px;
-    display: none; 
-  }
-  
-  
-  .editor-wrapper {
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-  }
-  
-  .line-numbers {
-    padding-top: 10px; 
-    user-select: none;
-    font-family: 'Courier New', monospace, sans-serif;
-    padding-right: 10px;
-    line-height: 1.5em; 
-    white-space: pre; 
-    overflow-y: hidden; 
+    display: inline-block;
+    cursor: pointer;
   }
 
-  #editor {
-    width: 100%;
-    font-family: 'Courier New', monospace, sans-serif;
-    line-height: 1.5em;
-    font-size: 16px;
-    resize: none;
-    border: none;
-    outline: none;
-    padding: 10px;
+  #buttonInstall {
+    display: none;
   }
-  
-  .flex-row {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .justify-flex-end {
-    justify-content: flex-end;
-  }
-  
-  .btn {
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .nav-btn a { 
-      display: none; /* hide button */
-    }
-    nav h1 {
-      font-size: 1.5rem;
-    }
-  
-    .nav-btn .install-img { 
-      display: inline-block;
-    }
-  }
+}
